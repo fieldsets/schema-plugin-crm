@@ -1,0 +1,12 @@
+{
+    "schemas":[],
+    "plugins":[],
+    "packages":[],
+    "containers": [
+        {
+            "name": "postgres",
+            "token": "db-postgres",
+            "url": "git@github.com:fieldsets/db-postgres.git"
+        }
+    ]
+}

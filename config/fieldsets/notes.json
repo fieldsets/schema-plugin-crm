@@ -1,0 +1,45 @@
+[
+    {
+        "token": "notes",
+        "label": "Notes",
+        "fields": [
+            {
+                "token": "note",
+                "label": "Note",
+                "type": "object",
+                "store": "document"
+            },
+            {
+                "token": "note_type",
+                "label": "Note Type",
+                "type": "enum",
+                "values": [
+                    "text",
+                    "json",
+                    "custom"
+                ]
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Owner",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            }
+        ]
+    }
+]
