@@ -1,0 +1,147 @@
+[
+    {
+        "token": "messages",
+        "label": "Messages",
+        "fields": [
+            {
+                "token": "message_text",
+                "label": "Message Text",
+                "type": "string",
+                "store": "record"
+            },
+            {
+                "token": "message_type",
+                "label": "Message Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
+                "store": ["filter","record"]
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference_type",
+                "label": "Association Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference_type",
+                "label": "Member Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Reference",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "type": "enum",
+                "store": "filter"
+            }
+        ]
+    },
+    {
+        "token": "conversations",
+        "label": "Conversations",
+        "fields": [
+            {
+                "token": "topic",
+                "label": "topic",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "conversation_type",
+                "label": "Conversation Type",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    "email",
+                    "chat",
+                    "phone",
+                    "custom"
+                ]
+            },
+            {
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "updated",
+                "label": "Date Updated",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "message_reference",
+                "label": "Conversation Messages",
+                "parent": "messages",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference_type",
+                "label": "Association Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference_type",
+                "label": "Member Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Owner",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "type": "enum",
+                "store": "filter"
+            }
+        ]
+    }
+]

@@ -2,7 +2,6 @@
     {
         "token": "members",
         "label": "Members",
-        "store": "filter",
         "fields": [
             {
                 "token": "login",
@@ -13,11 +12,8 @@
             {
                 "token": "member_type",
                 "label": "Member Type",
-                "store": "enum",
-                "values": [
-                    "standard",
-                    "guest"
-                ]
+                "type": "enum",
+                "store": "filter"
             },
             {
                 "token": "firstname",
@@ -38,16 +34,28 @@
                 "store": "filter"
             },
             {
-                "token": "email",
-                "label": "Email Address",
-                "type": "string",
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
                 "store": "filter"
             },
             {
-                "token": "meta_data",
-                "label": "Meta Data",
-                "type": "document",
+                "token": "updated",
+                "label": "Date Updated",
+                "type": "ts",
                 "store": "filter"
+            },
+            {
+                "token": "email",
+                "label": "Email Address",
+                "type": "string",
+                "store": "lookup"
+            },
+            {
+                "token": "phone_number",
+                "label": "Phone Number",
+                "type": "string",
+                "store": "lookup"
             }
         ]
     }

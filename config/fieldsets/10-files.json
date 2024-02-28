@@ -1,0 +1,83 @@
+[
+    {
+        "token": "files",
+        "label": "Files",
+        "fields": [
+            {
+                "token": "file_name",
+                "label": "File Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "file_path",
+                "label": "File Path",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "file_type",
+                "label": "File Type",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "file_location",
+                "label": "File Location",
+                "type": "file",
+                "store": "filter"
+            },
+            {
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "updated",
+                "label": "Date Updated",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference_type",
+                "label": "Association Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference_type",
+                "label": "Member Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Reference",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "type": "enum",
+                "store": "filter"
+            }
+        ]
+    }
+]

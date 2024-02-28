@@ -13,6 +13,7 @@
                 "token": "note_type",
                 "label": "Note Type",
                 "type": "enum",
+                "store": "filter",
                 "values": [
                     "text",
                     "json",
@@ -27,6 +28,12 @@
                 "store": "lookup"
             },
             {
+                "token": "association_reference_type",
+                "label": "Association Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
                 "token": "member_reference",
                 "label": "Member Reference",
                 "parent": "members",
@@ -34,11 +41,23 @@
                 "store": "lookup"
             },
             {
+                "token": "member_reference_type",
+                "label": "Member Reference Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
                 "token": "user_reference",
-                "label": "User Owner",
+                "label": "User Reference",
                 "parent": "users",
                 "type": "fieldset",
                 "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "type": "enum",
+                "store": "filter"
             }
         ]
     }
