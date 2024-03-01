@@ -31,6 +31,7 @@
             {
                 "token": "association_reference_type",
                 "label": "Association Reference Type",
+                "parent": "association_reference",
                 "type": "enum",
                 "store": "filter"
             },
@@ -44,6 +45,7 @@
             {
                 "token": "member_reference_type",
                 "label": "Member Reference Type",
+                "parent": "member_reference",
                 "type": "enum",
                 "store": "filter"
             },
@@ -57,6 +59,7 @@
             {
                 "token": "user_reference_type",
                 "label": "User Reference Type",
+                "parent": "user_reference",
                 "type": "enum",
                 "store": "filter"
             }

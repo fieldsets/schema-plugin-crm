@@ -1,36 +1,30 @@
 [
     {
-        "token": "associations",
-        "label": "Associations",
+        "token": "meetings",
+        "label": "Meetings",
         "fields": [
             {
-                "token": "association_name",
-                "label": "Association Name",
-                "type": "string",
+                "token": "meeting",
+                "label": "Meeting ",
+                "type": "object",
                 "store": "filter"
             },
             {
-                "token": "association_description",
-                "label": "Association Description",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "created",
-                "label": "Date Created",
-                "type": "ts",
-                "store": "filter"
-            },
-            {
-                "token": "updated",
-                "label": "Date Updated",
-                "type": "ts",
-                "store": "filter"
-            },
-            {
-                "token": "association_type",
-                "label": "Association Type",
+                "token": "meeting_type",
+                "label": "Meeting Type",
                 "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "meeting_date",
+                "label": "Meeting Date",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "meeting_duration",
+                "label": "Meeting Duration",
+                "type": "ts",
                 "store": "filter"
             },
             {
@@ -43,6 +37,7 @@
             {
                 "token": "association_reference_type",
                 "label": "Association Reference Type",
+                "parent": "association_reference",
                 "type": "enum",
                 "store": "filter"
             },
@@ -56,6 +51,7 @@
             {
                 "token": "member_reference_type",
                 "label": "Member Reference Type",
+                "parent": "member_reference",
                 "type": "enum",
                 "store": "filter"
             },
@@ -69,6 +65,7 @@
             {
                 "token": "user_reference_type",
                 "label": "User Reference Type",
+                "parent": "user_reference",
                 "type": "enum",
                 "store": "filter"
             }

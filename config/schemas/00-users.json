@@ -22,18 +22,6 @@
                 ]
             },
             {
-                "token": "firstname",
-                "label": "First Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "lastname",
-                "label": "Last Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "displayname",
                 "label": "Display Name",
                 "type": "string",
@@ -50,18 +38,6 @@
                 "label": "Date Updated",
                 "type": "ts",
                 "store": "filter"
-            },
-            {
-                "token": "email",
-                "label": "Email Address",
-                "type": "string",
-                "store": "lookup"
-            },
-            {
-                "token": "phone_number",
-                "label": "Phone Number",
-                "type": "string",
-                "store": "lookup"
             }
         ]
     }

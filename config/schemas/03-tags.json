@@ -20,6 +20,18 @@
                 "label": "Tag Target",
                 "type": "fieldset",
                 "store": "lookup"
+            },
+            {
+                "token": "tag_target_type",
+                "label": "Tag Target Type",
+                "type": "enum",
+                "values": [
+                    "users",
+                    "members",
+                    "associations",
+                    "custom"
+                ],
+                "store": "lookup"
             }
         ]
     }

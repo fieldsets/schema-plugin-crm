@@ -1,0 +1,32 @@
+[
+    {
+        "token": "members",
+        "label": "Members",
+        "fields": [
+            {
+                "token": "member_type",
+                "label": "Member Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "displayname",
+                "label": "Display Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "updated",
+                "label": "Date Updated",
+                "type": "ts",
+                "store": "filter"
+            }
+        ]
+    }
+]

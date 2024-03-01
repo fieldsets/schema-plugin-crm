@@ -1,0 +1,98 @@
+[
+    {
+        "token": "tasks",
+        "label": "Tasks",
+        "fields": [
+            {
+                "token": "task",
+                "label": "Task",
+                "type": "object",
+                "store": "record"
+            },
+            {
+                "token": "task_name",
+                "label": "Task Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "task_type",
+                "label": "Task Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "task_status",
+                "label": "Task Status",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "created",
+                "label": "Date Created",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "updated",
+                "label": "Date Updated",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "start_date",
+                "label": "Start Date",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "end_date",
+                "label": "End Date",
+                "type": "ts",
+                "store": "filter"
+            },
+            {
+                "token": "association_reference",
+                "label": "Association Reference",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference_type",
+                "label": "Association Reference Type",
+                "parent": "association_reference",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "member_reference",
+                "label": "Member Reference",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference_type",
+                "label": "Member Reference Type",
+                "parent": "member_reference",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "user_reference",
+                "label": "User Reference",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "parent": "user_reference",
+                "type": "enum",
+                "store": "filter"
+            }
+        ]
+    }
+]
