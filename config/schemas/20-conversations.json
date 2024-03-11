@@ -82,12 +82,6 @@
                 ]
             },
             {
-                "token": "updated",
-                "label": "Date Updated",
-                "type": "ts",
-                "store": "filter"
-            },
-            {
                 "token": "message_reference",
                 "label": "Conversation Messages",
                 "parent": "messages",

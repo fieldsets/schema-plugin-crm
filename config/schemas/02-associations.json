@@ -22,12 +22,6 @@
                 "store": "filter"
             },
             {
-                "token": "updated",
-                "label": "Date Updated",
-                "type": "ts",
-                "store": "filter"
-            },
-            {
                 "token": "association_reference",
                 "label": "Association Reference",
                 "parent": "associations",

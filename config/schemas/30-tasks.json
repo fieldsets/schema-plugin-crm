@@ -28,12 +28,6 @@
                 "store": "filter"
             },
             {
-                "token": "updated",
-                "label": "Date Updated",
-                "type": "ts",
-                "store": "filter"
-            },
-            {
                 "token": "start_date",
                 "label": "Start Date",
                 "type": "ts",
