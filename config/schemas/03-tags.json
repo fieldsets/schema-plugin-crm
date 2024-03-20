@@ -16,6 +16,12 @@
                 "store": "filter"
             },
             {
+                "token": "tag_type",
+                "label": "Tag Type",
+                "type": "enum",
+                "store": "lookup"
+            },
+            {
                 "token": "tag_target",
                 "label": "Tag Target",
                 "type": "fieldset",

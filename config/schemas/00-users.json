@@ -26,12 +26,6 @@
                 "label": "Display Name",
                 "type": "string",
                 "store": "filter"
-            },
-            {
-                "token": "updated",
-                "label": "Date Updated",
-                "type": "ts",
-                "store": "filter"
             }
         ]
     }

@@ -14,48 +14,6 @@
                 "label": "Message Type",
                 "type": "enum",
                 "store": "filter"
-            },
-            {
-                "token": "association_reference",
-                "label": "Association Reference",
-                "parent": "associations",
-                "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "association_reference_type",
-                "label": "Association Reference Type",
-                "parent": "association_reference",
-                "type": "enum",
-                "store": "filter"
-            },
-            {
-                "token": "member_reference",
-                "label": "Member Reference",
-                "parent": "members",
-                "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "member_reference_type",
-                "label": "Member Reference Type",
-                "parent": "member_reference",
-                "type": "enum",
-                "store": "filter"
-            },
-            {
-                "token": "user_reference",
-                "label": "User Reference",
-                "parent": "users",
-                "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "user_reference_type",
-                "label": "User Reference Type",
-                "parent": "user_reference",
-                "type": "enum",
-                "store": "filter"
             }
         ]
     },
@@ -82,30 +40,71 @@
                 ]
             },
             {
+                "token": "conversation_role",
+                "label": "Conversation Role",
+                "type": "enum",
+                "store": "lookup",
+                "values": [
+                    "sender",
+                    "recipient",
+                    "cc",
+                    "bcc",
+                    "forwarder",
+                    "caller",
+                    "reciever",
+                    "participant",
+                    "observer"
+                ]
+            },
+            {
                 "token": "message_reference",
                 "label": "Conversation Messages",
-                "values": "messages",
+                "parent": "messages",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "association_reference",
                 "label": "Association Reference",
-                "values": "associations",
+                "parent": "associations",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "association_reference_role",
+                "label": "Association Reference Role",
+                "parent": "association_reference",
+                "values": "conversation_role",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "member_reference",
                 "label": "Member Reference",
-                "values": "members",
+                "parent": "members",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "member_reference_role",
+                "label": "Member Reference Role",
+                "parent": "member_reference",
+                "values": "conversation_role",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "user_reference",
-                "label": "User Owner",
-                "values": "users",
+                "label": "User Reference",
+                "parent": "users",
+                "type": "fieldset",
+                "store": "lookup"
+            },
+            {
+                "token": "user_reference_type",
+                "label": "User Reference Type",
+                "parent": "user_reference",
+                "values": "conversation_role",
                 "type": "fieldset",
                 "store": "lookup"
             }
