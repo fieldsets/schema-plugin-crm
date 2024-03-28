@@ -4,6 +4,18 @@
         "label": "Users",
         "fields": [
             {
+                "token": "user_id",
+                "label": "User ID",
+                "type": "number",
+                "store": "lookup"
+            },
+            {
+                "token": "user_uuid",
+                "label": "User UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
                 "token": "username",
                 "label": "User Name",
                 "type": "string",
@@ -15,17 +27,21 @@
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    "admin",
-                    "write",
-                    "read",
-                    "guest"
+                    {"admin_user":"Admin Priviledged User"},
+                    {"write_user":"Write Priviledged User"},
+                    {"read_user":"Read Only User"},
+                    {"guest_user":"Guest User"}
                 ]
             },
             {
-                "token": "displayname",
-                "label": "Display Name",
-                "type": "string",
-                "store": "filter"
+                "token": "user_status",
+                "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"user_active_status":"Active"},
+                    {"user_inactive_status":"Inactive"}
+                ]
             }
         ]
     }

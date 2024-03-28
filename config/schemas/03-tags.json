@@ -4,18 +4,6 @@
         "label": "Tags",
         "fields": [
             {
-                "token": "tag",
-                "label": "Tag",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "tag_name",
-                "label": "Tag Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
                 "token": "tag_type",
                 "label": "Tag Type",
                 "type": "enum",
@@ -32,10 +20,10 @@
                 "label": "Tag Target Type",
                 "type": "enum",
                 "values": [
-                    "users",
-                    "members",
-                    "associations",
-                    "custom"
+                    {"users_tag":"User Tag"},
+                    {"members_tag":"Member Tag"},
+                    {"associations_tag":"Association Tag"},
+                    {"custom_tag":"Custom Tag"}
                 ],
                 "store": "lookup"
             }

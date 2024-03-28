@@ -15,9 +15,12 @@
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    "text",
-                    "json",
-                    "custom"
+                    {"text_note":"Text Note"},
+                    {"json_note":"JSON Object"},
+                    {"md_note":"Markdown"},
+                    {"html_note": "HTML"},
+                    {"xml_note":"XML"},
+                    {"custom_note":"Custom"}
                 ]
             },
             {

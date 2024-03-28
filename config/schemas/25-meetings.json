@@ -7,7 +7,7 @@
                 "token": "meeting",
                 "label": "Meeting ",
                 "type": "object",
-                "store": "filter"
+                "store": "document"
             },
             {
                 "token": "meeting_type",

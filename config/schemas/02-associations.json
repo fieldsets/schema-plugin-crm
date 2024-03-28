@@ -4,9 +4,15 @@
         "label": "Associations",
         "fields": [
             {
-                "token": "association_name",
-                "label": "Association Name",
-                "type": "string",
+                "token": "association_id",
+                "label": "Association ID",
+                "type": "number",
+                "store": "lookup"
+            },
+            {
+                "token": "association_uuid",
+                "label": "Association UUID",
+                "type": "uuid",
                 "store": "filter"
             },
             {
@@ -20,6 +26,16 @@
                 "label": "Association Description",
                 "type": "string",
                 "store": "filter"
+            },
+            {
+                "token": "association_status",
+                "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"association_active_status": "Active"},
+                    {"association_inactive_status": "Inactive"}
+                ]
             },
             {
                 "token": "association_reference",

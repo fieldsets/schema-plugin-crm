@@ -4,16 +4,32 @@
         "label": "Members",
         "fields": [
             {
+                "token": "member_id",
+                "label": "Member ID",
+                "type": "number",
+                "store": "lookup"
+            },
+            {
+                "token": "member_uuid",
+                "label": "Member UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
                 "token": "member_type",
                 "label": "Member Type",
                 "type": "enum",
                 "store": "filter"
             },
             {
-                "token": "displayname",
-                "label": "Display Name",
-                "type": "string",
-                "store": "filter"
+                "token": "member_status",
+                "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"member_active_status":"Active"},
+                    {"member_inactive_status":"Inactive"}
+                ]
             }
         ]
     }

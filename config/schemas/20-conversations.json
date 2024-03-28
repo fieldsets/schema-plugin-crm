@@ -33,10 +33,10 @@
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    "email",
-                    "chat",
-                    "phone",
-                    "custom"
+                    "email_conversation",
+                    "chat_conversation",
+                    "phone_conversation",
+                    "custom_conversation"
                 ]
             },
             {
@@ -45,15 +45,15 @@
                 "type": "enum",
                 "store": "lookup",
                 "values": [
-                    "sender",
-                    "recipient",
-                    "cc",
-                    "bcc",
-                    "forwarder",
-                    "caller",
-                    "reciever",
-                    "participant",
-                    "observer"
+                    "sender_role",
+                    "recipient_role",
+                    "cc_role",
+                    "bcc_role",
+                    "forwarder_role",
+                    "caller_role",
+                    "reciever_role",
+                    "participant_role",
+                    "observer_role"
                 ]
             },
             {

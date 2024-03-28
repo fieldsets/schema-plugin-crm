@@ -5,32 +5,10 @@
         "parent": "members",
         "fields": [
             {
-                "token": "client_id",
-                "label": "Client ID",
-                "type": "number",
-                "store": "filter"
-            },
-            {
-                "token": "client_uuid",
-                "label": "Client UUID",
-                "type": "uuid",
-                "store": "filter"
-            },
-            {
                 "token": "client_dob",
                 "label": "Client Birthdate",
                 "type": "date",
                 "store": "document"
-            },
-            {
-                "token": "client_status",
-                "label": "Status",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    "active",
-                    "inactive"
-                ]
             },
             {
                 "token": "client_type",
@@ -39,55 +17,49 @@
                 "store": "filter"
             },
             {
-                "token": "login",
-                "label": "Login",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "firstname",
+                "token": "client_firstname",
                 "label": "First Name",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "lastname",
+                "token": "client_lastname",
                 "label": "Last Name",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "middlename",
+                "token": "client_middlename",
                 "label": "Middle Name",
                 "type": "string",
                 "store": "filter"
             },
             {
-                "token": "gender",
+                "token": "client_gender",
                 "label": "Gender",
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    "Male",
-                    "Female",
-                    "Other",
-                    "NA"
+                    {"gender_male":"Male"},
+                    {"gender_female":"Female"},
+                    {"gender_other":"Other"},
+                    {"gender_unspecified":"Not Specified"}
                 ]
             },
             {
-                "token": "email",
+                "token": "client_email",
                 "label": "Email Address",
                 "type": "string",
                 "store": "lookup"
             },
             {
-                "token": "phone_number",
+                "token": "client_phone_number",
                 "label": "Phone Number",
                 "type": "object",
                 "store": "lookup"
             },
             {
-                "token": "address",
+                "token": "client_address",
                 "label": "Address",
                 "type": "object",
                 "store": "lookup"
