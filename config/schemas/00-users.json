@@ -7,7 +7,7 @@
                 "token": "user_id",
                 "label": "User ID",
                 "type": "number",
-                "store": "lookup"
+                "store": "filter"
             },
             {
                 "token": "user_uuid",

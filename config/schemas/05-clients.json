@@ -55,13 +55,13 @@
             {
                 "token": "client_phone_number",
                 "label": "Phone Number",
-                "type": "object",
+                "type": "string",
                 "store": "lookup"
             },
             {
                 "token": "client_address",
                 "label": "Address",
-                "type": "object",
+                "type": "string",
                 "store": "lookup"
             }
         ]

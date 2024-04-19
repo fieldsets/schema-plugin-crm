@@ -7,7 +7,7 @@
                 "token": "member_id",
                 "label": "Member ID",
                 "type": "number",
-                "store": "lookup"
+                "store": "filter"
             },
             {
                 "token": "member_uuid",

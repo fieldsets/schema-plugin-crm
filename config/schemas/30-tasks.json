@@ -42,21 +42,21 @@
             {
                 "token": "association_reference",
                 "label": "Association Reference",
-                "parent": "associations",
+                "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "member_reference",
                 "label": "Member Reference",
-                "parent": "members",
+                "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
                 "token": "user_reference",
                 "label": "User Reference",
-                "parent": "users",
+                "values": "users",
                 "type": "fieldset",
                 "store": "lookup"
             }
