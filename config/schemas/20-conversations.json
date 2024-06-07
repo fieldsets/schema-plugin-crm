@@ -22,7 +22,7 @@
         "label": "Conversations",
         "fields": [
             {
-                "token": "topic",
+                "token": "conversation_topic",
                 "label": "topic",
                 "type": "string",
                 "store": "filter"
@@ -64,14 +64,14 @@
                 "store": "lookup"
             },
             {
-                "token": "association_reference",
+                "token": "conversation_association_reference",
                 "label": "Association Reference",
                 "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "association_reference_role",
+                "token": "conversation_association_reference_role",
                 "label": "Association Reference Role",
                 "parent": "association_reference",
                 "values": "conversation_role",
@@ -79,14 +79,14 @@
                 "store": "lookup"
             },
             {
-                "token": "member_reference",
+                "token": "conversation_member_reference",
                 "label": "Member Reference",
                 "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "member_reference_role",
+                "token": "conversation_member_reference_role",
                 "label": "Member Reference Role",
                 "parent": "member_reference",
                 "values": "conversation_role",
@@ -94,14 +94,14 @@
                 "store": "lookup"
             },
             {
-                "token": "user_reference",
+                "token": "conversation_user_reference",
                 "label": "User Reference",
                 "values": "users",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "user_reference_type",
+                "token": "conversation_user_reference_type",
                 "label": "User Reference Type",
                 "parent": "user_reference",
                 "values": "conversation_role",

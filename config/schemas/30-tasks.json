@@ -28,33 +28,33 @@
                 "store": "filter"
             },
             {
-                "token": "start_date",
+                "token": "task_start_date",
                 "label": "Start Date",
                 "type": "ts",
                 "store": "filter"
             },
             {
-                "token": "end_date",
+                "token": "task_end_date",
                 "label": "End Date",
                 "type": "ts",
                 "store": "filter"
             },
             {
-                "token": "association_reference",
+                "token": "task_association_reference",
                 "label": "Association Reference",
                 "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "member_reference",
+                "token": "task_member_reference",
                 "label": "Member Reference",
                 "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "user_reference",
+                "token": "task_user_reference",
                 "label": "User Reference",
                 "values": "users",
                 "type": "fieldset",

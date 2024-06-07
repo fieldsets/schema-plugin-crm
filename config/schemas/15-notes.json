@@ -24,21 +24,21 @@
                 ]
             },
             {
-                "token": "association_reference",
+                "token": "note_association_reference",
                 "label": "Association Reference",
                 "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "member_reference",
+                "token": "note_member_reference",
                 "label": "Member Reference",
                 "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "user_reference",
+                "token": "note_user_reference",
                 "label": "User Reference",
                 "values": "users",
                 "type": "fieldset",

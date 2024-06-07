@@ -34,21 +34,21 @@
                 "store": "filter"
             },
             {
-                "token": "association_reference",
-                "label": "Association Reference",
+                "token": "file_association_reference",
+                "label": "File Association Reference",
                 "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "member_reference",
+                "token": "file_member_reference",
                 "label": "Member Reference",
                 "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "user_reference",
+                "token": "file_user_reference",
                 "label": "User Reference",
                 "values": "users",
                 "type": "fieldset",
