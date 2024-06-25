@@ -2,5 +2,5 @@
     "schemas":[],
     "plugins":[],
     "packages":[],
-    "containers": []
+    "containers": ["fieldsets-local"]
 }
