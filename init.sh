@@ -17,7 +17,7 @@ foreach ($schema in $schemas) {
         $priority = $split_name[0]
         $token = $split_name[1]
 
-        & "/fieldsets-bin/import-json.sh" -token "$($token)" -source 'crm' -json "$($schemaJSON)" -type 'schema' -priority $($priority)
+        & "/usr/local/fieldsets/bin/import-json.sh" -token "$($token)" -source 'crm' -json "$($schemaJSON)" -type 'schema' -priority $($priority)
     }
 }
 
