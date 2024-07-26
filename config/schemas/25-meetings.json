@@ -28,21 +28,21 @@
                 "store": "filter"
             },
             {
-                "token": "association_reference",
+                "token": "meeting_association_reference",
                 "label": "Association Reference",
                 "values": "associations",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "member_reference",
+                "token": "meeting_member_reference",
                 "label": "Member Reference",
                 "values": "members",
                 "type": "fieldset",
                 "store": "lookup"
             },
             {
-                "token": "user_reference",
+                "token": "meeting_user_reference",
                 "label": "User Reference",
                 "values": "users",
                 "type": "fieldset",
