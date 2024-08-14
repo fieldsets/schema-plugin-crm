@@ -16,7 +16,7 @@
                 "store": "filter"
             },
             {
-                "token": "username",
+                "token": "user_name",
                 "label": "User Name",
                 "type": "string",
                 "store": "filter"
