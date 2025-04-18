@@ -36,27 +36,6 @@
                     {"association_active_status": "Active"},
                     {"association_inactive_status": "Inactive"}
                 ]
-            },
-            {
-                "token": "association_reference",
-                "label": "Association Reference",
-                "values": "associations",
-                "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "member_reference",
-                "label": "Member Reference",
-                "values": "members",
-                "type": "fieldset",
-                "store": "lookup"
-            },
-            {
-                "token": "user_reference",
-                "label": "User Reference",
-                "values": "users",
-                "type": "fieldset",
-                "store": "lookup"
             }
         ]
     }

@@ -1,5 +1,10 @@
 {
+    "name": "Fieldsets CRM Schema Plugin",
+    "token": "schema-plugin-crm",
     "schema": "crm",
+    "priority": 10,
     "version": "1.0.0",
-    "db_name": "crm"
+    "db": "crm",
+    "url": "https://github.com/fieldsets/schema-plugin-crm",
+    "enabled": false
 }

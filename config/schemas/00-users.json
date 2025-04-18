@@ -22,25 +22,13 @@
                 "store": "filter"
             },
             {
-                "token": "user_type",
-                "label": "User Type",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"admin_user":"Admin Priviledged User"},
-                    {"write_user":"Write Priviledged User"},
-                    {"read_user":"Read Only User"},
-                    {"guest_user":"Guest User"}
-                ]
-            },
-            {
                 "token": "user_status",
                 "label": "Status",
                 "type": "enum",
                 "store": "filter",
                 "values": [
-                    {"user_active_status":"Active"},
-                    {"user_inactive_status":"Inactive"}
+                    {"user_status_active":"Active"},
+                    {"user_status_inactive":"Inactive"}
                 ]
             }
         ]

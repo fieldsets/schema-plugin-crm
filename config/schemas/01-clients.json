@@ -1,0 +1,102 @@
+[
+    {
+        "token": "clients",
+        "label": "Clients",
+        "fields": [
+            {
+                "token": "client_id",
+                "label": "Client ID",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "client_uuid",
+                "label": "Client UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "client_type",
+                "label": "Client Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "client_status",
+                "label": "Status",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"member_active_status":"Active"},
+                    {"member_inactive_status":"Inactive"}
+                ]
+            },
+            {
+                "token": "client_dob",
+                "label": "Client Birthdate",
+                "type": "date",
+                "store": "document"
+            },
+            {
+                "token": "client_type",
+                "label": "Client Type",
+                "type": "enum",
+                "store": "filter"
+            },
+            {
+                "token": "client_firstname",
+                "label": "First Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_lastname",
+                "label": "Last Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_middlename",
+                "label": "Middle Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_gender",
+                "label": "Gender",
+                "type": "enum",
+                "store": "filter",
+                "values": [
+                    {"gender_male":"Male"},
+                    {"gender_female":"Female"},
+                    {"gender_other":"Other"},
+                    {"gender_unspecified":"Not Specified"}
+                ]
+            },
+            {
+                "token": "client_primary_email",
+                "label": "Email Address",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_primary_phone",
+                "label": "Phone Number",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_primary_address",
+                "label": "Address",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_key",
+                "label": "Client Key",
+                "type": "string",
+                "store": "lookup"
+            }
+        ]
+    }
+]
