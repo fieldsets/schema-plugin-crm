@@ -20,16 +20,6 @@
                 "label": "User Name",
                 "type": "string",
                 "store": "filter"
-            },
-            {
-                "token": "user_status",
-                "label": "Status",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"user_status_active":"Active"},
-                    {"user_status_inactive":"Inactive"}
-                ]
             }
         ]
     }

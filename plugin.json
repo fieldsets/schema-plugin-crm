@@ -6,5 +6,5 @@
     "version": "1.0.0",
     "db": "crm",
     "url": "https://github.com/fieldsets/schema-plugin-crm",
-    "enabled": false
+    "enabled": true
 }

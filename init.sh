@@ -22,4 +22,3 @@ foreach ($schema in $schemas) {
 }
 
 Exit
-Exit-PSHostProcess
