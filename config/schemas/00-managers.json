@@ -1,0 +1,62 @@
+[
+    {
+        "token": "managers",
+        "label": "Managers",
+        "fields": [
+            {
+                "token": "manager_id",
+                "label": "Manager ID",
+                "type": "number",
+                "store": "filter"
+            },
+            {
+                "token": "manager_uuid",
+                "label": "Manager UUID",
+                "type": "uuid",
+                "store": "filter"
+            },
+            {
+                "token": "manager_name",
+                "label": "Manager Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_firstname",
+                "label": "Manager First Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_middlename",
+                "label": "Manager Middle Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_lastname",
+                "label": "Manager Last Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_initials",
+                "label": "Manager Initials",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_email",
+                "label": "Manager Email",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_key",
+                "label": "Manager Key",
+                "type": "string",
+                "store": "lookup"
+            }
+        ]
+    }
+]

@@ -20,8 +20,8 @@
                 "label": "Tag Target Type",
                 "type": "enum",
                 "values": [
-                    {"users_tag":"User Tag"},
-                    {"members_tag":"Member Tag"},
+                    {"users_tag":"Manager Tag"},
+                    {"members_tag":"Client Tag"},
                     {"associations_tag":"Association Tag"},
                     {"custom_tag":"Custom Tag"}
                 ],
