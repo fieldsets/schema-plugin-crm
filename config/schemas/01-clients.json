@@ -6,7 +6,25 @@
             {
                 "token": "client_id",
                 "label": "Client ID",
-                "type": "number",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_token",
+                "label": "Client Token",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_name",
+                "label": "Client Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_label",
+                "label": "Client Label",
+                "type": "string",
                 "store": "filter"
             },
             {
@@ -22,36 +40,20 @@
                 "store": "filter"
             },
             {
-                "token": "client_status",
-                "label": "Status",
-                "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"member_active_status":"Active"},
-                    {"member_inactive_status":"Inactive"}
-                ]
-            },
-            {
                 "token": "client_dob",
                 "label": "Client Birthdate",
                 "type": "date",
-                "store": "document"
+                "store": "filter"
             },
             {
-                "token": "client_type",
-                "label": "Client Type",
-                "type": "enum",
+                "token": "client_age",
+                "label": "Client Age",
+                "type": "number",
                 "store": "filter"
             },
             {
                 "token": "client_firstname",
                 "label": "First Name",
-                "type": "string",
-                "store": "filter"
-            },
-            {
-                "token": "client_lastname",
-                "label": "Last Name",
                 "type": "string",
                 "store": "filter"
             },
@@ -62,16 +64,16 @@
                 "store": "filter"
             },
             {
+                "token": "client_lastname",
+                "label": "Last Name",
+                "type": "string",
+                "store": "filter"
+            },
+            {
                 "token": "client_gender",
                 "label": "Gender",
                 "type": "enum",
-                "store": "filter",
-                "values": [
-                    {"gender_male":"Male"},
-                    {"gender_female":"Female"},
-                    {"gender_other":"Other"},
-                    {"gender_unspecified":"Not Specified"}
-                ]
+                "store": "filter"
             },
             {
                 "token": "client_primary_email",
@@ -92,10 +94,60 @@
                 "store": "filter"
             },
             {
+                "token": "client_emails",
+                "label": "Client Emails",
+                "type": "string",
+                "store": "lookup"
+            },
+            {
+                "token": "client_phone_numbers",
+                "label": "Client Phone Numbers",
+                "type": "string",
+                "store": "lookup"
+            },
+            {
+                "token": "client_addresses",
+                "label": "Client Addresses",
+                "type": "object",
+                "store": "filter"
+            },
+            {
+                "token": "client_primary_manager",
+                "label": "Client Primary Manager",
+                "type": "fieldset",
+                "store": "filter",
+                "values": "managers"
+            },
+            {
+                "token": "client_managers",
+                "label": "Client Managers",
+                "type": "fieldset",
+                "store": "lookup",
+                "values": "managers"
+            },
+            {
+                "token": "client_meta_data",
+                "label": "Client Meta Data",
+                "type": "object",
+                "store": "filter"
+            },
+            {
                 "token": "client_key",
                 "label": "Client Key",
                 "type": "string",
                 "store": "lookup"
+            },
+            {
+                "token": "client_nickname",
+                "label": "Client Nickname",
+                "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "client_preferred_name",
+                "label": "Client Preferred Name",
+                "type": "string",
+                "store": "filter"
             }
         ]
     }

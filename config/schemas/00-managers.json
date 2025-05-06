@@ -10,15 +10,21 @@
                 "store": "filter"
             },
             {
-                "token": "manager_uuid",
-                "label": "Manager UUID",
-                "type": "uuid",
+                "token": "manager_token",
+                "label": "Manager Token",
+                "type": "string",
                 "store": "filter"
             },
             {
                 "token": "manager_name",
                 "label": "Manager Name",
                 "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_uuid",
+                "label": "Manager UUID",
+                "type": "uuid",
                 "store": "filter"
             },
             {
@@ -49,6 +55,12 @@
                 "token": "manager_email",
                 "label": "Manager Email",
                 "type": "string",
+                "store": "filter"
+            },
+            {
+                "token": "manager_meta_data",
+                "label": "Manager Meta Data",
+                "type": "object",
                 "store": "filter"
             },
             {
