@@ -6,7 +6,7 @@
             {
                 "token": "manager_id",
                 "label": "Manager ID",
-                "type": "number",
+                "type": "string",
                 "store": "filter"
             },
             {
