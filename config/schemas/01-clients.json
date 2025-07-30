@@ -112,18 +112,18 @@
                 "store": "filter"
             },
             {
-                "token": "client_primary_manager",
-                "label": "Client Primary Manager",
+                "token": "client_primary_team",
+                "label": "Client Primary Managment Team",
                 "type": "fieldset",
                 "store": "filter",
-                "values": "managers"
+                "values": "teams"
             },
             {
-                "token": "client_managers",
-                "label": "Client Managers",
+                "token": "client_teams",
+                "label": "Client Management Teams",
                 "type": "fieldset",
                 "store": "lookup",
-                "values": "managers"
+                "values": "teams"
             },
             {
                 "token": "client_meta_data",

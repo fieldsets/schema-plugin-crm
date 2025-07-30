@@ -12,7 +12,7 @@ $schemas = Get-ChildItem "$($plugin_path)/config/schemas/*.json"
 foreach ($schema in $schemas) {
     $schemaObject = Get-Content -Raw -Path "$($schema)" | ConvertFrom-Json -NoEnumerate -AsHashtable
     if ($null -ne $schemaObject) {
-        $schemaJSON = ConvertTo-Json -depth 10 -Compress -InputObject $schemaObject
+        $schemaJSON = ConvertTo-Json -Depth 10 -Compress -InputObject $schemaObject
         $split_name = ($schema.BaseName).split("-",2)
         $priority = $split_name[0]
         $token = $split_name[1]
